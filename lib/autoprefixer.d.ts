@@ -64,6 +64,9 @@ declare namespace autoprefixer {
     /** Autoprefixer default browsers */
     defaults: string[]
 
+    /** Clear Autoprefixer's browserslist caches */
+    clearBrowserslistCaches(): void
+
     /** Inspect with default Autoprefixer */
     info(options?: { from?: string }): string
 
@@ -77,6 +80,9 @@ declare namespace autoprefixer {
 
   /** Autoprefixer default browsers */
   let defaults: ExportedAPI['defaults']
+
+  /** Clear Autoprefixer's browserslist caches */
+  let clearBrowserslistCaches: ExportedAPI['clearBrowserslistCaches']
 
   /** Inspect with default Autoprefixer */
   let info: ExportedAPI['info']
